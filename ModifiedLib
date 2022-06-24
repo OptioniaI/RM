@@ -5,7 +5,6 @@ local runService = game:GetService"RunService"
 local tweenService = game:GetService"TweenService"
 local textService = game:GetService"TextService"
 local inputService = game:GetService"UserInputService"
-local SetName = tostring(math.random(10, 10))..tostring(math.random(10,10))..tostring(math.random(10, 10))
 
 --Locals
 local dragging, dragInput, dragStart, startPos, dragObject
@@ -25,14 +24,6 @@ local function round(num, bracket)
 		a = a + bracket
 	end
 	return a
-end
-
-function flags:ToggleUI()
-    if game.CoreGui[SetName].Enabled then
-        game.CoreGui[SetName].Enabled = false
-    else
-        game.CoreGui[SetName].Enabled = true
-    end
 end
 
 local function keyCheck(x,x1)
